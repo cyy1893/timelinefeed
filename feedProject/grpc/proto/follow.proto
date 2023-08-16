@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package follow;
+
+option go_package = "../follow";
+
+service FollowService {
+  // Get followers by following ID
+  rpc GetFollowersByFollowingID(FollowingIDRequest) returns (FollowersResponse);
+}
+
+message FollowingIDRequest {
+  uint32 following_id = 1;
+}
+
+message FollowersResponse {
+  repeated uint32 follower_ids = 1;
+}

@@ -1,0 +1,11 @@
+### Create Feed ###
+POST http://localhost:8080/feeds?content=Example+Feed&publisher_id=123&publish_time=2023-08-06+12:00:00
+
+### Update Feed ###
+PUT http://localhost:8080/feeds/1?content=Updated+Feed&publisher_id=456&publish_time=2023-08-06+13:00:00
+
+### Delete Feed ###
+DELETE http://localhost:8080/feeds/1
+
+### Get Feed by ID ###
+GET http://localhost:8080/feeds/1

@@ -1,0 +1,29 @@
+###
+### Create Follow
+###
+
+POST http://localhost:8080/follow?userId=100&followedUserId=200
+
+###
+
+###
+### Update Follow
+###
+
+PUT http://localhost:8080/follow/1?userId=100&followedUserId=300
+
+###
+
+###
+### Delete Follow
+###
+
+DELETE http://localhost:8080/follow/1
+
+###
+
+###
+### Get Follow
+###
+
+GET http://localhost:8080/follow/1

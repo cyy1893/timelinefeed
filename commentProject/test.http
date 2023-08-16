@@ -1,0 +1,8 @@
+POST /comment/count HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+  "feed_id": 123,
+  "comment_count": 5
+}
